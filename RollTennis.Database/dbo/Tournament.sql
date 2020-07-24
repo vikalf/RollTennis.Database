@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Tournament]
+(
+	[TournamentId] INT IDENTITY (1, 1) NOT FOR REPLICATION NOT NULL,
+	[Name]		   VARCHAR(100),
+	[Description]  VARCHAR(100),
+	CONSTRAINT [PK_Tournament] PRIMARY KEY CLUSTERED ([TournamentId] ASC) WITH (PAD_INDEX = ON, DATA_COMPRESSION = PAGE)
+)
